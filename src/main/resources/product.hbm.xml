@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.example.entity.Product" table="products">
+        <id name="id" column="id">
+            <generator class="identity"/> <!-- Try AUTO, SEQUENCE, etc. -->
+        </id>
+        <property name="name" column="name" type="string"/>
+        <property name="description" column="description" type="string"/>
+        <property name="price" column="price" type="double"/>
+        <property name="quantity" column="quantity" type="int"/>
+    </class>
+</hibernate-mapping>
